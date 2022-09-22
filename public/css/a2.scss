@@ -1,0 +1,269 @@
+.container-of-offers {
+  display: flex;
+  flex-direction: column;
+
+  .one-offer {
+    margin-top: 21px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.16);
+    padding: 24px;
+
+    .offer-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .offer-header {
+      display: flex;
+      align-items: center;
+
+      .offer-header-image {
+        width: 45px;
+        height: 45px;
+        margin-right: 15px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+      }
+
+      p {
+      }
+
+      span {
+        font-size: 13px;
+        color: #777;
+      }
+    }
+
+    .offer-details {
+      width: 75%;
+      font-size: 14px;
+      color: #525e75;
+      text-align: center;
+      margin: 18px auto;
+    }
+
+    .offer-action {
+      display: flex;
+      justify-content: flex-end;
+
+      button {
+        border: 0px;
+        cursor: pointer;
+        color: #fff;
+        border-radius: 4px;
+        transition-duration: 0.4s;
+        padding: 0px 12px;
+      }
+
+      .primary {
+        background-color: #47cf40;
+        color: #fff;
+
+        a {
+          display: inline-block;
+          font-size: 14px;
+          padding: 8px 21px;
+        }
+
+        &:hover {
+          background-color: #76e870;
+        }
+      }
+
+      .reject {
+        background-color: #d7124340;
+        margin-left: 15px;
+        color: #d71243;
+        transition-duration: 0.4s;
+
+        &:hover {
+          background-color: #d71243;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.container-user-data {
+  width: 550px;
+  box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+  padding: 24px;
+  border-radius: 6px;
+  margin: 48px auto;
+
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .user-data-header {
+      text-align: center;
+
+      h3 {
+        color: #212121;
+      }
+
+      p {
+        margin: 10px 0px;
+        color: #999;
+        font-weight: 900;
+      }
+
+      .user-data-header-image {
+        margin: 12px 0px;
+
+        img {
+          width: 200px;
+          height: 200px;
+          object-fit: contain;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .user-data-content {
+      text-align: center;
+
+      p {
+        margin-bottom: 10px;
+
+        span {
+          color: #d71243;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+/* End Of Section  */
+
+.head-contact {
+  margin-top: 68px;
+  justify-content: center;
+}
+
+.head-contact h1 {
+  margin: 0px;
+  color: #36ae7c;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact > div {
+  display: flex;
+  gap: 10px;
+}
+
+.contact > div input {
+  flex: 1;
+}
+
+.contact input,
+.contact textarea {
+  flex: 1;
+  margin: 8px 0px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 6px 10px;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  outline: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.contact button {
+  margin-top: 24px;
+  padding: 10px 48px !important;
+}
+
+.container-profile > div {
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 6px, rgba(0, 0, 0, 0.13) 0px 3px 6px;
+  padding: 24px;
+  border-radius: 4px;
+}
+
+.container-profile .container-inputs > div:not(.container-employee) {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.container-profile .container-inputs > div div {
+  display: flex;
+  align-items: center;
+  margin: 8px 0px;
+}
+
+.container-profile .container-inputs > div input {
+  margin: 0px;
+}
+
+.container-profile .container-inputs > div label {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.container-profile .container-inputs button {
+  padding: 10px;
+  margin-top: 20px;
+  border: 0px;
+  background-color: #47cf40;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #47cf4095;
+  }
+}
+
+.container-inputs-employee label {
+  width: 100px;
+  color: #525e75;
+}
+
+.container-profile .container-inputs h3 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.container-profile .container-inputs input,
+.container-profile .container-inputs textarea {
+  padding: 8px 12px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 12px;
+  outline-color: #49a5bf;
+}
+
+.container-profile .container-inputs a {
+  text-align: left;
+  font-size: 13px;
+  color: blue;
+  margin: 10px 0px;
+}
+
+.container-profile .container-offers {
+  margin-top: 24px;
+}
+
+.container-profile .container-offers h3 {
+  text-align: center;
+  margin-bottom: 24px;
+}
