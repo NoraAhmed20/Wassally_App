@@ -188,7 +188,7 @@ class ProviderController extends Controller
         // 'Profile_pic' => $request->file('pic')->getClientOriginalName(),        
         ]);
 
-         return redirect('/Home');
+         return redirect('/');
 
     }
 

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Delivry App</title>
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/sty.css') }}">
     <link rel="stylesheet" href="{{ asset('css/a.css') }}">
     <link rel="stylesheet" href="{{ asset('css/a2.css') }}">
     <link rel="stylesheet" href="{{ asset('css/a.css.map') }}">
@@ -19,7 +20,7 @@
         </div>
         <nav>
             <ul id='MenuItems'>
-                <li><a href='Home'>Home</a></li>
+                <li><a href='{{route("Home")}}'>Home</a></li>
                 <li><a href='about'>About Us</a></li>
                 @auth
                     @cannot('is_provider')

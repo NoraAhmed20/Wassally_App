@@ -28,7 +28,7 @@ use App\Http\Controllers\AdminController;
 
 Route::get('/about', function () {return view("about");});
 Route::get('/contact', function () {return view("contact");});
-Route::get('/Home', function () {return view("Home");});
+Route::get('/', function () {return view("Home");})->name('Home');
 Route::get('/services', function () {return view("services");});
 Route::get('/user', function () { return view("user");});
 // Route::get('/orders', function () { return view("orders");});
